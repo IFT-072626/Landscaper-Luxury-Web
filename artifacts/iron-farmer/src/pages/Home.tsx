@@ -1,6 +1,7 @@
 import { FadeIn } from '@/components/ui/fade-in';
 import { Link } from 'wouter';
 import { ArrowRight, ShieldCheck } from 'lucide-react';
+import heroVideo from '@assets/Drone_surveilling_Florida_homestead_202607171633_1785107479357.mp4';
 
 export default function Home() {
   return (
@@ -8,10 +9,13 @@ export default function Home() {
       {/* Hero Section */}
       <section className="relative w-full h-[100dvh] overflow-hidden bg-[#2B2B28]">
         <div className="absolute inset-0 w-full h-full">
-          <img 
-            src="/images/hero.jpg" 
-            alt="Forested homestead property" 
-            className="w-full h-full object-cover opacity-60"
+          <video
+            src={heroVideo}
+            autoPlay
+            loop
+            muted
+            playsInline
+            className="w-full h-full object-cover opacity-70"
           />
         </div>
         <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-transparent to-[#2B2B28]/90" />
