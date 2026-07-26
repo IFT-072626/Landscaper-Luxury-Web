@@ -1,0 +1,74 @@
+Design a website as if Patagonia hired a luxury landscape architecture firm to create a regenerative landscape company focused on food security and preparedness. The company is called "Iron Farmer" . The UI should be a blend of Architecture Studio for the typography, navigation, and premium feel. National Geographic UI for imagery and storytelling. The homepage should play the uploaded AI video of a surveillance drone flying in POV over a homestead. Elegant typography with subtle motion. As the user scrolls, cinematic footage transitions into clean architectural diagrams explaining our "Passive Calorie System". Eliminate words like “survival” and “tactical”. The tactical homestead defense component exists as a premium add-on. The goal is to appeal to affluent rural property owners, estate owners, and people investing in resilience. Avoid looking like a “Prepper” website. Position the brand as intelligent, regenerative and professional.  
+
+edge-to-edge photography
+minimal navigation
+Grid-based layouts
+Sophisticated typography
+Plenty of white space
+Thin dividers and subtle animation
+Focus on craftsmanship and process rather than sales
+
+What visitors feel:
+	
+“These people are experts. This is a high-end design service.”
+
+
+The aesthetic should feel like a blend of:
+Patagonia outdoor branding
+Thesla-style clean technology
+High-end landscape architecture firms 
+Modern survival/permaculture education
+Premium and Intelligent
+Engineering-driven 
+
+Use:
+Earthy neutral “tactical” colors
+Cinematic hero-image video backgrounds 
+Premium consulting service company feel
+
+Color palette: Think “Patagonia meets tactical”
+
+Charcoal
+OD Green
+Coyote Tan
+Off-White
+FDE
+Warm Sand
+
+Homepage:
+Use the uploaded AI video of a surveillance drone flying in POV over a homestead
+Display the tagline: “Food Sovereignty Infrastructure” on the homepage
+Call to action: “Schedule a property assessment”
+
+Service pages:
+Mission
+Systems
+Passive Calorie System (PCS)
+Plant Guilds
+Defensive Site Preparation 
+Risk assessment 
+Custom Site Preparation
+Principles
+Homestead Defense Training
+Mercantile
+Gear
+Tools
+Rations
+Resilient Starts
+Blog
+Contact: Superior Elite Branding + Asynchronous communication consultative application process:
+Application minimalist contact form: (Force potential clients to apply [qualify])
+Curated booking link for Calendly scheduling
+Install a button: Request an Encrypted Consultation
+
+Typography:
+Headings:
+Canela
+Cormorant Garamond
+Playfair Display
+
+Body:
+Inter
+Manrope
+Satoshi
+IBM Plex Sans

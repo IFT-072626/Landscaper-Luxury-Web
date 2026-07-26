@@ -1,0 +1,27 @@
+kind = "web"
+previewPath = "/"
+title = "Iron Farmer"
+version = "1.0.0"
+id = "artifacts/iron-farmer"
+router = "path"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 23368
+
+[services.development]
+run = "pnpm --filter @workspace/iron-farmer run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/iron-farmer", "run", "build" ]
+serve = "static"
+publicDir = "artifacts/iron-farmer/dist/public"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "23368"
+BASE_PATH = "/"
