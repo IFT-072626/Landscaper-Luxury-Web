@@ -29,7 +29,7 @@ export default function Home() {
           
           <FadeIn delay={0.2}>
             <p className="text-[#D9CABA] font-mono text-sm md:text-base uppercase tracking-[0.2em] max-w-2xl mb-12">
-              Intelligent land systems for the resilient estate.
+              For the resilient estate
             </p>
           </FadeIn>
           

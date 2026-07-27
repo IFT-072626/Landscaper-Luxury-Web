@@ -8,10 +8,10 @@ export default function Mission() {
       <section className="px-6 lg:px-12 py-20 max-w-[1400px] mx-auto border-b border-[#D9CABA]">
         <FadeIn>
           <h1 className="text-5xl md:text-7xl font-serif text-[#2B2B28] max-w-4xl leading-[1.1] mb-8">
-            Permanence, intelligence, craft, and land stewardship.
+            Our mission is to systemize food sovereignty
           </h1>
           <p className="font-mono text-xs uppercase tracking-[0.2em] text-[#B59A72]">
-            Our Mission & Ethos
+            Our Mission
           </p>
         </FadeIn>
       </section>
@@ -21,72 +21,59 @@ export default function Mission() {
         <div className="grid lg:grid-cols-12 gap-16 lg:gap-24">
           <div className="lg:col-span-5">
             <FadeIn>
-              <div className="aspect-[3/4] overflow-hidden bg-[#1a1a18] flex items-center justify-center p-8">
-                <img 
+              <div className="w-full overflow-hidden bg-[#1a1a18]">
+                <img
                   src={logoImg}
-                  alt="Iron Farmer Emblem" 
-                  className="w-full h-full object-contain"
+                  alt="Iron Farmer Emblem"
+                  className="w-full h-full object-cover"
                 />
               </div>
             </FadeIn>
           </div>
-          
+
           <div className="lg:col-span-7 font-sans text-lg text-[#4A5240] leading-relaxed space-y-8 pt-8">
             <FadeIn delay={0.2}>
-              <p className="text-2xl font-serif text-[#2B2B28] leading-snug">
-                We believe that the ultimate luxury is sovereignty. True wealth is an estate that sustains itself, independent of fragile global supply chains.
+              <p>
+                We believe the homesteading movement is too confusing. The space is saturated with personalities, myriad philosophies and growing methods, pseudo-science, and an overall lack of urgency.
               </p>
             </FadeIn>
-            
+
             <FadeIn delay={0.3}>
               <p>
-                Iron Farmer was founded on a simple premise: modern landscaping is purely aesthetic and ultimately parasitic. It consumes water, fuel, and labor to produce nothing but appearance. We approach the land differently. We see acreage as an engine. 
+                We believe the homesteading movement has become unnecessarily confusing. The space is saturated with personalities, competing philosophies, countless growing methods, pseudoscience, and an overall lack of urgency.
               </p>
+              <p className="mt-6">Our approach is simple:</p>
+              <ol className="mt-4 space-y-4 list-none">
+                {[
+                  "Estimate the caloric requirements you or your family would need to survive if you could no longer purchase food from a grocery store.",
+                  "Produce those calories using the most resilient crops available and suitable to your climate.",
+                  "Grow them in systems that require the absolute minimum maintenance.",
+                  "Establish them as one harmonious, self-regenerating ecosystem.",
+                ].map((item, i) => (
+                  <li key={i} className="flex gap-4">
+                    <span className="font-mono text-[#B59A72] shrink-0">{i + 1}.</span>
+                    <span>{item}</span>
+                  </li>
+                ))}
+              </ol>
             </FadeIn>
-            
+
             <FadeIn delay={0.4}>
               <p>
-                By applying principles of regenerative agriculture, hydrological engineering, and architectural precision, we design and install systems that yield thousands of calories per acre, autonomously. This is not hobby farming. This is engineered resilience. 
+                Our Passive Calorie System™ (PCS) accomplishes exactly that.
               </p>
-            </FadeIn>
-            
-            <FadeIn delay={0.5}>
-              <div className="my-16 h-px w-full bg-[#D9CABA]" />
-              <h3 className="font-mono text-xs uppercase tracking-[0.2em] text-[#2B2B28] mb-6">Our Core Values</h3>
-              <div className="grid sm:grid-cols-2 gap-12">
-                <div>
-                  <h4 className="font-serif text-xl text-[#2B2B28] mb-3">Permanence</h4>
-                  <p className="text-sm">We design for the century, not the season. Infrastructure should compound in value over time.</p>
-                </div>
-                <div>
-                  <h4 className="font-serif text-xl text-[#2B2B28] mb-3">Intelligence</h4>
-                  <p className="text-sm">Every element serves multiple functions. The design does the heavy lifting, replacing human labor.</p>
-                </div>
-                <div>
-                  <h4 className="font-serif text-xl text-[#2B2B28] mb-3">Craft</h4>
-                  <p className="text-sm">Utility must be beautiful. Our installations read as high-end architecture, flawlessly executed.</p>
-                </div>
-                <div>
-                  <h4 className="font-serif text-xl text-[#2B2B28] mb-3">Stewardship</h4>
-                  <p className="text-sm">We leave the soil richer, the water cleaner, and the ecology more robust than we found it.</p>
-                </div>
-              </div>
+              <p className="mt-6 font-serif text-xl text-[#2B2B28] leading-snug">
+                Think of it as a caloric contingency plan.
+              </p>
+              <p className="mt-6">
+                This modular approach creates consistency, simplifies expansion, and eliminates much of the labor-intensive disappointment often associated with annual crops. Every species we plant serves multiple functions, and just as every soldier on a battlefield has a role, the system is designed with redundancy in mind. If one species fails, another is prepared to fill its ecological and nutritional role.
+              </p>
+              <p className="mt-6">
+                Our mission is to cultivate a new generation of Renaissance men, women, and children—individuals who think critically about their food systems and strive to become more intelligent, compassionate, capable, and sovereign.
+              </p>
             </FadeIn>
           </div>
         </div>
-      </section>
-
-      {/* Wide Image */}
-      <section className="px-6 lg:px-12 max-w-[1400px] mx-auto">
-        <FadeIn>
-          <div className="w-full aspect-[21/9] overflow-hidden bg-[#2B2B28]">
-            <img 
-              src="/images/mission-2.jpg" 
-              alt="Mature food forest" 
-              className="w-full h-full object-cover opacity-90"
-            />
-          </div>
-        </FadeIn>
       </section>
     </div>
   );
