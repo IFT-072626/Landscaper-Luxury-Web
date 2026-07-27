@@ -5,8 +5,9 @@ import heroVideo from '@assets/Drone_surveilling_Florida_homestead_202607171633_
 import pcsImg from '@assets/PCS2_1785181146836.png';
 import siteImg from '@assets/IF-1-acre_1785180909087.png';
 import guildImg from '@assets/IF-survival-guild_1785181168212.png';
-import pcsLogoImg from '@assets/IF-PCS_1785181244912.png';
-import sheepImg from '@assets/Crackersheep1_1785181265768.jfif';
+import chinaImg from '@assets/China-First_1785187101802.png';
+import aoaImg from '@assets/IF-AOA_1785187101816.png';
+import crackerCowImg from '@assets/Crackercows_1785187101816.jpg';
 
 export default function Home() {
   return (
@@ -54,7 +55,7 @@ export default function Home() {
         <div className="max-w-4xl mx-auto text-center">
           <FadeIn>
             <p className="text-2xl md:text-4xl font-serif leading-snug text-[#2B2B28]">
-              Iron Farmer designs, installs, and maintains one repeatable modular system of security crops tailored to your microclimate.
+              Iron Farmer designs, installs, and maintains a repeatable modular system of security crops tailored to your microclimate.
             </p>
           </FadeIn>
         </div>
@@ -102,20 +103,20 @@ export default function Home() {
               {[
                 {
                   title: "Site Preparation",
-                  desc: "Precision grading, soil amendment, and structural earthworks.",
+                  desc: "",
                   img: siteImg,
                   link: "/systems/site-preparation"
                 },
                 {
                   title: "Plant Guilds",
-                  desc: "Engineered biological assemblies for robust calorie production.",
+                  desc: "",
                   img: guildImg,
                   link: "/systems/plant-guilds"
                 },
                 {
-                  title: "Water Systems",
-                  desc: "Resilient hydration infrastructure moving water purely by gravity.",
-                  img: "/images/home-serv-3.jpg",
+                  title: "Animal Systems",
+                  desc: "",
+                  img: crackerCowImg,
                   link: "/systems"
                 }
               ].map((serv, i) => (
@@ -128,7 +129,7 @@ export default function Home() {
                     />
                   </div>
                   <h4 className="font-serif text-2xl text-[#2B2B28] mb-3">{serv.title}</h4>
-                  <p className="font-sans text-[#4A5240] mb-4 text-sm">{serv.desc}</p>
+                  {serv.desc && <p className="font-sans text-[#4A5240] mb-4 text-sm">{serv.desc}</p>}
                   <span className="font-mono text-xs uppercase tracking-[0.15em] text-[#B59A72] group-hover:text-[#2B2B28] transition-colors flex items-center gap-2">
                     View Service <ArrowRight className="w-3 h-3" />
                   </span>
@@ -151,7 +152,7 @@ export default function Home() {
                 Site Security & Readiness
               </h2>
               <p className="font-sans text-[#4A5240] text-sm md:text-base mb-8">
-                The next step after installing your PCS, we offer specialized infrastructure enhancements focusing on defensive site preparation and property readiness training. Integrated seamlessly into the landscape.
+                The next step after installing your PCS. We offer specialized infrastructure enhancements focusing on defensive site preparation and property readiness training. Integrated seamlessly into the landscape.
               </p>
               <Link href="/contact" className="inline-flex items-center gap-2 font-mono text-xs uppercase tracking-[0.15em] text-[#2B2B28] border-b border-[#2B2B28] pb-1 hover:text-[#B59A72] hover:border-[#B59A72] transition-colors">
                 Request details securely
@@ -195,7 +196,7 @@ export default function Home() {
               <Link href="/blog" className="group block">
                 <div className="aspect-[16/9] overflow-hidden bg-[#2B2B28] mb-6">
                   <img 
-                    src={pcsLogoImg}
+                    src={chinaImg}
                     alt="Iron Farmer Passive Calorie System" 
                     className="w-full h-full object-cover opacity-90 group-hover:scale-105 group-hover:opacity-100 transition-all duration-700"
                   />
@@ -211,7 +212,7 @@ export default function Home() {
               <Link href="/blog" className="group block">
                 <div className="aspect-[16/9] overflow-hidden bg-[#2B2B28] mb-6">
                   <img 
-                    src={sheepImg}
+                    src={aoaImg}
                     alt="Florida Cracker Sheep" 
                     className="w-full h-full object-cover opacity-90 group-hover:scale-105 group-hover:opacity-100 transition-all duration-700"
                   />
