@@ -9,16 +9,17 @@ export default function Principles() {
             The Framework
           </h1>
           <p className="font-mono text-xs uppercase tracking-[0.2em] text-[#B59A72]">
-            Our Operating Principles
+            For Such a Time as This
           </p>
         </FadeIn>
       </section>
 
       <section className="px-6 lg:px-12 py-24 max-w-[800px] mx-auto">
         <div className="space-y-32">
+
           <FadeIn>
             <div className="relative">
-              <span className="absolute -left-12 md:-left-24 top-2 font-mono text-4xl text-[#D9CABA] opacity-50">1</span>
+              <span className="absolute -left-12 md:-left-24 top-2 font-mono text-4xl text-[#D9CABA] opacity-50">I</span>
               <h2 className="text-3xl font-serif text-[#2B2B28] mb-6">Resilience</h2>
               <p className="font-sans text-lg text-[#4A5240] leading-relaxed">
                 The world has entered a period of increasing uncertainty. Global conflicts, supply chain disruptions, and resource competition have revealed just how dependent modern agriculture is on fuel, fertilizer, and complex distribution networks.
@@ -28,10 +29,10 @@ export default function Principles() {
               </p>
             </div>
           </FadeIn>
-          
+
           <FadeIn>
             <div className="relative">
-              <span className="absolute -left-12 md:-left-24 top-2 font-mono text-4xl text-[#D9CABA] opacity-50">2</span>
+              <span className="absolute -left-12 md:-left-24 top-2 font-mono text-4xl text-[#D9CABA] opacity-50">II</span>
               <h2 className="text-3xl font-serif text-[#2B2B28] mb-6">Sovereignty</h2>
               <p className="font-sans text-lg text-[#4A5240] leading-relaxed">
                 Every human being on the face of this earth has an unalienable right to grow food. There is no regulatory body irrespective of size or power that can take this right away. Nor is there one with which we would comply should it attempt to do so.
@@ -42,9 +43,9 @@ export default function Principles() {
           <FadeIn>
             <div className="relative">
               <span className="absolute -left-12 md:-left-24 top-2 font-mono text-4xl text-[#D9CABA] opacity-50">III</span>
-              <h2 className="text-3xl font-serif text-[#2B2B28] mb-6">Capture Energy, Leak Nothing</h2>
+              <h2 className="text-3xl font-serif text-[#2B2B28] mb-6">Urgency</h2>
               <p className="font-sans text-lg text-[#4A5240] leading-relaxed">
-                Water leaving your property is lost capital. Leaves blown away are exported fertility. A well-designed estate operates as a closed loop—capturing sunlight, banking water in the soil, and recycling every scrap of organic matter back into the system.
+                The best time to plant your fruit trees was 10 years ago and the next best time is today. Sophisticated land owners know that nature moves slow and productive systems take time to establish. We don't wait for another manufactured crisis to spur us into action. An investment in food sovereignty right now could prove priceless in the future.
               </p>
             </div>
           </FadeIn>
@@ -52,12 +53,23 @@ export default function Principles() {
           <FadeIn>
             <div className="relative">
               <span className="absolute -left-12 md:-left-24 top-2 font-mono text-4xl text-[#D9CABA] opacity-50">IV</span>
-              <h2 className="text-3xl font-serif text-[#2B2B28] mb-6">Design from Patterns to Details</h2>
+              <h2 className="text-3xl font-serif text-[#2B2B28] mb-6">Self-Defense</h2>
               <p className="font-sans text-lg text-[#4A5240] leading-relaxed">
-                We do not start by asking what tree to plant. We start by looking at the macro patterns: watershed, climate, solar arc, and topography. Only once the structural foundation is engineered do we select the species that fit the niches created.
+                We believe security begins long before force becomes necessary. Our training emphasizes awareness, planning, responsible firearm ownership, sound and sober judgement, and lawful defensive skills appropriate for rural property owners. Protective skills are simply one component of responsible stewardship, alongside food production, water management, medical readiness, and physical fitness. We believe the first line of defense is critical thinking.
               </p>
             </div>
           </FadeIn>
+
+          <FadeIn>
+            <div className="relative">
+              <span className="absolute -left-12 md:-left-24 top-2 font-mono text-4xl text-[#D9CABA] opacity-50">V</span>
+              <h2 className="text-3xl font-serif text-[#2B2B28] mb-6">Legacy</h2>
+              <p className="font-sans text-lg text-[#4A5240] leading-relaxed">
+                Plant trees under whose shade you will never sit. Our Perennial food system is designed to be self-regenerating. Once established it can last multiple generations providing safe organic food for your children's children. If you move, we have a licensed Real Estate agent who will negotiate either ownership or access to your Passive Calorie System (PCS).
+              </p>
+            </div>
+          </FadeIn>
+
         </div>
       </section>
     </div>

@@ -3,6 +3,17 @@ import { Link } from 'wouter';
 import { ArrowRight } from 'lucide-react';
 import tradmomImg from '@assets/tradmom3_1785110411053.png';
 
+const skills = [
+  "Regular perimeter patrols",
+  "Motion lighting and camera observation posts",
+  "Natural choke points",
+  "Concentric zone control",
+  "Rally zones and escape routes",
+  "Quick livestock lockdown",
+  "Silent signals for livestock",
+  "Situational drills and contingency",
+];
+
 export default function HomesteadDefense() {
   return (
     <div className="pt-24 pb-32">
@@ -13,23 +24,20 @@ export default function HomesteadDefense() {
             <span className="text-[#D9CABA]">—</span>
             <span className="font-mono text-[10px] uppercase tracking-[0.2em] text-[#2B2B28]">Premium Add-On</span>
           </div>
-          <h1 className="text-5xl md:text-7xl font-serif text-[#2B2B28] max-w-4xl leading-[1.1] mb-8">
+          <h1 className="text-5xl md:text-7xl font-serif text-[#2B2B28] max-w-4xl leading-[1.1]">
             Homestead Defense Training
           </h1>
-          <p className="font-mono text-xs uppercase tracking-[0.2em] text-[#B59A72] max-w-2xl leading-relaxed">
-            Property readiness. Family preparedness. A premium service for serious landowners.
-          </p>
         </FadeIn>
       </section>
 
-      {/* Full-bleed image */}
+      {/* Full-bleed image — object-top ensures the URL watermark at the bottom is visible */}
       <section className="w-full">
         <FadeIn>
-          <div className="w-full h-[60vh] md:h-[80vh] overflow-hidden">
+          <div className="w-full overflow-hidden" style={{ maxHeight: '85vh' }}>
             <img
               src={tradmomImg}
               alt="Homestead family"
-              className="w-full h-full object-cover"
+              className="w-full object-cover object-top"
             />
           </div>
         </FadeIn>
@@ -44,35 +52,32 @@ export default function HomesteadDefense() {
               </h3>
             </FadeIn>
           </div>
+
           <div className="lg:col-span-8 space-y-16">
             <FadeIn delay={0.1}>
               <div className="border-t border-[#D9CABA] pt-10">
-                <h2 className="text-3xl font-serif text-[#2B2B28] mb-6">Designed for the Prepared Family</h2>
+                <h2 className="text-3xl font-serif text-[#2B2B28] mb-6">Protect what matters most</h2>
                 <p className="font-sans text-lg text-[#4A5240] leading-relaxed">
-                  True resilience extends beyond food production. Iron Farmer's Homestead Defense Training program is a comprehensive, property-specific curriculum developed for landowners who understand that the security of their estate and family is a design problem — one that demands the same precision and foresight applied to every other system we build.
+                  Our Homestead Defense program is tailored to landowners who value competence over bravado. Whether you're new to firearms or seeking to improve existing three-dimensional skills, our instruction emphasizes safety, confidence, and lawful defensive practices suited to the realities of rural living.
                 </p>
               </div>
             </FadeIn>
 
             <FadeIn delay={0.2}>
               <div className="border-t border-[#D9CABA] pt-10">
-                <h2 className="text-3xl font-serif text-[#2B2B28] mb-6">Site Security Design</h2>
-                <p className="font-sans text-lg text-[#4A5240] leading-relaxed">
-                  We conduct a full topographic and perimeter analysis of your property, identifying natural chokepoints, sight lines, and structural vulnerabilities. Our design team then develops a site security plan that integrates seamlessly with your landscape architecture — using terrain, vegetation, and built elements to create layered, passive security without the aesthetic of a fortification.
-                </p>
+                <p className="font-mono text-xs uppercase tracking-[0.2em] text-[#B59A72] mb-8">You will learn</p>
+                <ul className="space-y-4">
+                  {skills.map((skill, i) => (
+                    <li key={i} className="flex items-start gap-4">
+                      <span className="mt-2 w-1.5 h-1.5 bg-[#B59A72] shrink-0" />
+                      <span className="font-sans text-lg text-[#4A5240] leading-relaxed">{skill}</span>
+                    </li>
+                  ))}
+                </ul>
               </div>
             </FadeIn>
 
             <FadeIn delay={0.3}>
-              <div className="border-t border-[#D9CABA] pt-10">
-                <h2 className="text-3xl font-serif text-[#2B2B28] mb-6">Property Readiness Training</h2>
-                <p className="font-sans text-lg text-[#4A5240] leading-relaxed">
-                  Delivered by experienced instructors, our on-site training program covers property communication protocols, medical response fundamentals, patrol patterns, and decision frameworks for the rural landowner. This is not a weekend course. It is a curated, multi-session engagement designed around your land, your family, and your specific circumstances.
-                </p>
-              </div>
-            </FadeIn>
-
-            <FadeIn delay={0.4}>
               <div className="border-t border-[#D9CABA] pt-10 flex flex-col sm:flex-row gap-6">
                 <Link
                   href="/contact"
@@ -81,7 +86,7 @@ export default function HomesteadDefense() {
                   Apply for Access <ArrowRight className="w-4 h-4" />
                 </Link>
                 <p className="font-mono text-[10px] uppercase tracking-[0.15em] text-[#B59A72] self-center max-w-xs">
-                  This service is available exclusively to existing Iron Farmer clients following a completed site assessment.
+                  Available exclusively to existing Iron Farmer clients following a completed site assessment.
                 </p>
               </div>
             </FadeIn>
