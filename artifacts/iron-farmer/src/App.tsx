@@ -13,6 +13,7 @@ import PassiveCalorieSystem from '@/pages/PassiveCalorieSystem';
 import PlantGuilds from '@/pages/PlantGuilds';
 import SitePreparation from '@/pages/SitePreparation';
 import RiskAssessment from '@/pages/RiskAssessment';
+import HomesteadDefense from '@/pages/HomesteadDefense';
 import Principles from '@/pages/Principles';
 import Mercantile from '@/pages/Mercantile';
 import Blog from '@/pages/Blog';
@@ -31,6 +32,7 @@ function Router() {
         <Route path="/systems/plant-guilds" component={PlantGuilds} />
         <Route path="/systems/site-preparation" component={SitePreparation} />
         <Route path="/systems/risk-assessment" component={RiskAssessment} />
+        <Route path="/systems/homestead-defense" component={HomesteadDefense} />
         <Route path="/principles" component={Principles} />
         <Route path="/mercantile" component={Mercantile} />
         <Route path="/blog" component={Blog} />

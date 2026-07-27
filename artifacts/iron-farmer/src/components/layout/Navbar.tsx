@@ -37,11 +37,12 @@ export function Navbar() {
         { label: "Plant Guilds", href: "/systems/plant-guilds" },
         { label: "Site Preparation", href: "/systems/site-preparation" },
         { label: "Risk Assessment", href: "/systems/risk-assessment" },
+        { label: "Homestead Defense Training", href: "/systems/homestead-defense" },
       ]
     },
     { label: "Principles", href: "/principles" },
+    { label: "Intel", href: "/blog" },
     { label: "Mercantile", href: "/mercantile" },
-    { label: "Field Notes", href: "/blog" },
   ];
 
   return (

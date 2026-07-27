@@ -1,4 +1,5 @@
 import { FadeIn } from '@/components/ui/fade-in';
+import logoImg from '@assets/b49dc479-cac7-409a-9331-b7118b9f3c48_1785111974760.png';
 
 export default function Mission() {
   return (
@@ -20,11 +21,11 @@ export default function Mission() {
         <div className="grid lg:grid-cols-12 gap-16 lg:gap-24">
           <div className="lg:col-span-5">
             <FadeIn>
-              <div className="aspect-[3/4] overflow-hidden bg-[#2B2B28]">
+              <div className="aspect-[3/4] overflow-hidden bg-[#1a1a18] flex items-center justify-center p-8">
                 <img 
-                  src="/images/mission-1.jpg" 
-                  alt="Planting sapling in dark soil" 
-                  className="w-full h-full object-cover opacity-90"
+                  src={logoImg}
+                  alt="Iron Farmer Emblem" 
+                  className="w-full h-full object-contain"
                 />
               </div>
             </FadeIn>

@@ -23,7 +23,7 @@ export default function Home() {
         <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-6 mt-16">
           <FadeIn>
             <h1 className="text-[#F5F2EC] text-5xl md:text-7xl lg:text-8xl font-serif max-w-5xl leading-[1.1] mb-6">
-              Food Sovereignty Infrastructure
+              Systemized Food Sovereignty
             </h1>
           </FadeIn>
           

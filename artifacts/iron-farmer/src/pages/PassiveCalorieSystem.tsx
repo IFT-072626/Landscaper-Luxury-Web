@@ -13,7 +13,7 @@ export default function PassiveCalorieSystem() {
             <span className="font-mono text-[10px] uppercase tracking-[0.2em] text-[#2B2B28]">Flagship Methodology</span>
           </div>
           <h1 className="text-5xl md:text-7xl font-serif text-[#2B2B28] max-w-4xl leading-[1.1] mb-8">
-            The Passive Calorie System
+            Passive Calorie System
           </h1>
           <p className="font-sans text-xl text-[#4A5240] max-w-3xl leading-relaxed">
             A comprehensive architectural approach to biological infrastructure, designing land to yield thousands of calories with progressively diminishing human input.

@@ -39,16 +39,12 @@ export default function Mercantile() {
                 <div className="aspect-square bg-[#E8E4D9] mb-6 overflow-hidden border border-[#D9CABA]">
                   <img 
                     src={product.img} 
-                    alt={product.name} 
+                    alt={product.category} 
                     className="w-full h-full object-cover opacity-80 group-hover:opacity-100 group-hover:scale-105 transition-all duration-700 mix-blend-multiply"
                   />
                 </div>
-                <div className="flex justify-between items-start gap-4">
-                  <div>
-                    <h3 className="font-serif text-xl text-[#2B2B28] mb-1">{product.name}</h3>
-                    <p className="font-mono text-[10px] uppercase tracking-[0.15em] text-[#B59A72]">{product.category}</p>
-                  </div>
-                  <span className="font-mono text-sm text-[#2B2B28]">{product.price}</span>
+                <div>
+                  <p className="font-mono text-[10px] uppercase tracking-[0.15em] text-[#B59A72]">{product.category}</p>
                 </div>
               </div>
             </FadeIn>
