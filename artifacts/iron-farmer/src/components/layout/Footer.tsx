@@ -9,7 +9,7 @@ export function Footer() {
             <span className="font-serif text-3xl tracking-[0.2em] font-medium uppercase">Iron Farmer</span>
           </Link>
           <p className="font-sans text-[#D9CABA] max-w-md text-sm leading-relaxed">
-            Permanent food infrastructure for the resilient estate.
+            Permanent Food Infrastructure for the Resilient Estate.
           </p>
         </div>
         
