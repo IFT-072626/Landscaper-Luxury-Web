@@ -1,5 +1,5 @@
 import { FadeIn } from '@/components/ui/fade-in';
-import logoImg from '@assets/b49dc479-cac7-409a-9331-b7118b9f3c48_1785111974760.png';
+import logoImg from '@assets/IF-Logo-Final_1785170420424.png';
 
 export default function Mission() {
   return (
@@ -8,7 +8,7 @@ export default function Mission() {
       <section className="px-6 lg:px-12 py-20 max-w-[1400px] mx-auto border-b border-[#D9CABA]">
         <FadeIn>
           <h1 className="text-5xl md:text-7xl font-serif text-[#2B2B28] max-w-4xl leading-[1.1] mb-8">
-            Our mission is to systemize food sovereignty
+            Our mission is to systemize food sovereignty.
           </h1>
           <p className="font-mono text-xs uppercase tracking-[0.2em] text-[#B59A72]">
             Our Mission
@@ -34,20 +34,17 @@ export default function Mission() {
           <div className="lg:col-span-7 font-sans text-lg text-[#4A5240] leading-relaxed space-y-8 pt-8">
             <FadeIn delay={0.2}>
               <p>
-                We believe the homesteading movement is too confusing. The space is saturated with personalities, myriad philosophies and growing methods, pseudo-science, and an overall lack of urgency.
+                We believe the homesteading movement has become unnecessarily confusing. The space is saturated with (lunatic) personalities, competing philosophies, countless growing methods, patriot mythology and an overall lack of urgency. We are on a mission to cut through the noise, limit the endless options, and install repeatable, modular food systems designed for adversity.
               </p>
             </FadeIn>
 
             <FadeIn delay={0.3}>
-              <p>
-                We believe the homesteading movement has become unnecessarily confusing. The space is saturated with personalities, competing philosophies, countless growing methods, pseudoscience, and an overall lack of urgency.
-              </p>
-              <p className="mt-6">Our approach is simple:</p>
+              <p>Our approach is simple:</p>
               <ol className="mt-4 space-y-4 list-none">
                 {[
-                  "Estimate the caloric requirements you or your family would need to survive if you could no longer purchase food from a grocery store.",
+                  "Calculate the caloric requirements you or your family would need if going to the grocery store was no longer an option.",
                   "Produce those calories using the most resilient crops available and suitable to your climate.",
-                  "Grow them in systems that require the absolute minimum maintenance.",
+                  "Grow them in systems that require the absolute minimum maintenance once established.",
                   "Establish them as one harmonious, self-regenerating ecosystem.",
                 ].map((item, i) => (
                   <li key={i} className="flex gap-4">
@@ -67,9 +64,6 @@ export default function Mission() {
               </p>
               <p className="mt-6">
                 This modular approach creates consistency, simplifies expansion, and eliminates much of the labor-intensive disappointment often associated with annual crops. Every species we plant serves multiple functions, and just as every soldier on a battlefield has a role, the system is designed with redundancy in mind. If one species fails, another is prepared to fill its ecological and nutritional role.
-              </p>
-              <p className="mt-6">
-                Our mission is to cultivate a new generation of Renaissance men, women, and children—individuals who think critically about their food systems and strive to become more intelligent, compassionate, capable, and sovereign.
               </p>
             </FadeIn>
           </div>
