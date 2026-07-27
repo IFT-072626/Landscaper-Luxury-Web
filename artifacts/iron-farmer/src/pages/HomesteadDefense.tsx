@@ -5,7 +5,9 @@ import tradmomImg from '@assets/tradmom3_1785110411053.png';
 
 const skills = [
   "Regular perimeter patrols",
-  "Motion lighting and camera observation posts",
+  "Cameras and motion lighting",
+  "Observation posts (OP) and listening posts (LP)",
+  "Confined space tactics",
   "Natural choke points",
   "Concentric zone control",
   "Rally zones and escape routes",
@@ -58,7 +60,7 @@ export default function HomesteadDefense() {
               <div className="border-t border-[#D9CABA] pt-10">
                 <h2 className="text-3xl font-serif text-[#2B2B28] mb-6">Protect what matters most</h2>
                 <p className="font-sans text-lg text-[#4A5240] leading-relaxed">
-                  Our Homestead Defense program is tailored to landowners who value competence over bravado. Whether you're new to firearms or seeking to improve existing three-dimensional skills, our instruction emphasizes safety, confidence, and lawful defensive practices suited to the realities of rural living.
+                  Our Homestead Defense program is tailored to landowners who value competence over bravado. Whether you're new to firearms or seeking to improve existing three-dimensional skills, our instruction emphasizes safety, confidence, and lawful defensive practices suited to the realities of rural living. All Firearm training is conducted on your private property by qualified instructors using non-lethal simulation platforms. Safety is paramount. Children are welcome to join at your discretion.
                 </p>
               </div>
             </FadeIn>
