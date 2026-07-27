@@ -39,7 +39,7 @@ export default function Blog() {
         <FadeIn>
           <div className="relative z-10">
             <h1 className="text-5xl md:text-7xl font-serif text-[#2B2B28] max-w-4xl leading-[1.1] mb-8">
-              Intel
+              Intel Report
             </h1>
             <p className="font-mono text-xs uppercase tracking-[0.2em] text-[#B59A72] max-w-2xl leading-relaxed">
               The Food System Report

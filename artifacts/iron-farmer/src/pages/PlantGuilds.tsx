@@ -1,6 +1,8 @@
 import { FadeIn } from '@/components/ui/fade-in';
 import { Link } from 'wouter';
 import { ArrowRight } from 'lucide-react';
+import survivalGuildImg from '@assets/IF-survival-guild_1785194532368.png';
+import plantGuildImg from '@assets/Plant-guild_1785195383600.png';
 
 export default function PlantGuilds() {
   return (
@@ -16,18 +18,18 @@ export default function PlantGuilds() {
             Plant Guilds
           </h1>
           <p className="font-sans text-xl text-[#4A5240] max-w-3xl leading-relaxed">
-            In nature, plants do not grow in isolation. They form strategic alliances. We design engineered polycultures where every plant performs a distinct role, eliminating the need for external inputs.
+            Just like people, plants are stronger together. Carefully designed cooperative plant relationships reduce maintenance and support each other through nutrient cycling, living mulch, pest management and more. Every PCS deploys a carefully selected Guild.
           </p>
         </FadeIn>
       </section>
 
       <section className="px-6 lg:px-12 max-w-[1400px] mx-auto">
         <FadeIn>
-          <div className="w-full aspect-[16/9] bg-[#E8E4D9] border border-[#D9CABA] overflow-hidden">
-            <img 
-              src="/images/plant-guilds-botanical.jpg" 
-              alt="Botanical illustration of a plant guild" 
-              className="w-full h-full object-cover mix-blend-multiply"
+          <div className="w-full overflow-hidden">
+            <img
+              src={survivalGuildImg}
+              alt="Florida Permaculture Survival Crop Guild"
+              className="w-full h-full object-cover"
             />
           </div>
         </FadeIn>
@@ -37,11 +39,11 @@ export default function PlantGuilds() {
         <div className="grid lg:grid-cols-2 gap-24 items-center">
           <div>
             <FadeIn>
-              <h2 className="text-3xl font-serif text-[#2B2B28] mb-6">The Anatomy of a Guild</h2>
+              <h2 className="text-3xl font-serif text-[#2B2B28] mb-6">The Guild Platoon</h2>
               <p className="font-sans text-[#4A5240] mb-8 leading-relaxed">
                 A traditional orchard is fragile—a monoculture requiring constant defense. A plant guild is an impenetrable fortress. By surrounding a central calorie-producing tree with specific companion species, we create a self-sustaining micro-ecosystem.
               </p>
-              
+
               <div className="space-y-6 font-sans text-sm text-[#2B2B28]">
                 <div className="flex gap-4 border-b border-[#D9CABA] pb-4">
                   <span className="font-mono font-bold w-32">Nitrogen Fixers</span>
@@ -62,11 +64,11 @@ export default function PlantGuilds() {
               </div>
             </FadeIn>
           </div>
-          <div className="aspect-square bg-[#2B2B28] overflow-hidden">
-             <img 
-              src="/images/blog-guilds.jpg" 
-              alt="Lush plant understory" 
-              className="w-full h-full object-cover opacity-90"
+          <div className="overflow-hidden">
+            <img
+              src={plantGuildImg}
+              alt="Lush plant guild"
+              className="w-full h-full object-cover"
             />
           </div>
         </div>
