@@ -2,6 +2,11 @@ import { FadeIn } from '@/components/ui/fade-in';
 import { Link } from 'wouter';
 import { ArrowRight, ShieldCheck } from 'lucide-react';
 import heroVideo from '@assets/Drone_surveilling_Florida_homestead_202607171633_1785107479357.mp4';
+import pcsImg from '@assets/PCS2_1785181146836.png';
+import siteImg from '@assets/IF-1-acre_1785180909087.png';
+import guildImg from '@assets/IF-survival-guild_1785181168212.png';
+import pcsLogoImg from '@assets/IF-PCS_1785181244912.png';
+import sheepImg from '@assets/Crackersheep1_1785181265768.jfif';
 
 export default function Home() {
   return (
@@ -49,7 +54,7 @@ export default function Home() {
         <div className="max-w-4xl mx-auto text-center">
           <FadeIn>
             <p className="text-2xl md:text-4xl font-serif leading-snug text-[#2B2B28]">
-              Iron Farmer designs permanent food production infrastructure for property owners who understand that resilience is a design problem, not a product purchase.
+              Iron Farmer designs, installs, and maintains one repeatable modular system of security crops tailored to your microclimate.
             </p>
           </FadeIn>
         </div>
@@ -62,7 +67,7 @@ export default function Home() {
             <div className="mb-16 md:flex md:items-end justify-between border-b border-[#D9CABA] pb-8">
               <div>
                 <h2 className="text-xs font-mono uppercase tracking-[0.2em] text-[#B59A72] mb-4">Core Methodology</h2>
-                <h3 className="text-4xl md:text-5xl font-serif text-[#2B2B28]">The Passive Calorie System</h3>
+                <h3 className="text-4xl md:text-5xl font-serif text-[#2B2B28]">The Passive Calorie System™</h3>
               </div>
               <Link href="/systems/passive-calorie-system" className="hidden md:inline-flex items-center gap-2 font-mono text-xs uppercase tracking-[0.15em] text-[#4A5240] hover:text-[#2B2B28] transition-colors">
                 Explore the system <ArrowRight className="w-3 h-3" />
@@ -71,36 +76,18 @@ export default function Home() {
           </FadeIn>
 
           <FadeIn delay={0.2}>
-            <div className="grid md:grid-cols-2 gap-16 items-center">
-              <div className="relative aspect-square md:aspect-[4/3] bg-[#E8E4D9] border border-[#D9CABA] overflow-hidden">
+            <div className="grid md:grid-cols-2 gap-16 items-start">
+              <div className="overflow-hidden bg-[#2B2B28]">
                 <img 
-                  src="/images/pcs-diagram.jpg" 
-                  alt="Passive Calorie System Schematic" 
-                  className="w-full h-full object-contain p-8 mix-blend-multiply"
+                  src={pcsImg}
+                  alt="Passive Calorie System" 
+                  className="w-full h-full object-cover"
                 />
               </div>
-              <div className="space-y-8 font-sans text-lg text-[#4A5240] leading-relaxed">
+              <div className="font-sans text-lg text-[#4A5240] leading-relaxed">
                 <p>
-                  We engineer landscapes that capture energy, direct water, and compound biological capital. Our approach replaces high-maintenance annual agriculture with self-regulating perennial systems.
+                  The Passive Calorie system (PCS) is not a garden. Conventional gardens require continual inputs and offer negative yields. The PCS grows into a natural capital asset over time. Every crop is selected with intentionality to accomplish a specific objective. Productivity is engineered—not left to chance.
                 </p>
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 pt-8 border-t border-[#D9CABA]">
-                  <div>
-                    <h4 className="font-mono text-xs uppercase tracking-[0.1em] text-[#2B2B28] mb-2">01. Water</h4>
-                    <p className="text-sm">Passive earthworks, swales, and catchment geometry.</p>
-                  </div>
-                  <div>
-                    <h4 className="font-mono text-xs uppercase tracking-[0.1em] text-[#2B2B28] mb-2">02. Soil</h4>
-                    <p className="text-sm">Mycelial inoculation and bio-char integration.</p>
-                  </div>
-                  <div>
-                    <h4 className="font-mono text-xs uppercase tracking-[0.1em] text-[#2B2B28] mb-2">03. Guilds</h4>
-                    <p className="text-sm">Companion planted polycultures acting as single organisms.</p>
-                  </div>
-                  <div>
-                    <h4 className="font-mono text-xs uppercase tracking-[0.1em] text-[#2B2B28] mb-2">04. Harvest</h4>
-                    <p className="text-sm">Continuous decadal yield with diminishing labor inputs.</p>
-                  </div>
-                </div>
               </div>
             </div>
           </FadeIn>
@@ -116,13 +103,13 @@ export default function Home() {
                 {
                   title: "Site Preparation",
                   desc: "Precision grading, soil amendment, and structural earthworks.",
-                  img: "/images/home-serv-1.jpg",
+                  img: siteImg,
                   link: "/systems/site-preparation"
                 },
                 {
                   title: "Plant Guilds",
                   desc: "Engineered biological assemblies for robust calorie production.",
-                  img: "/images/home-serv-2.jpg",
+                  img: guildImg,
                   link: "/systems/plant-guilds"
                 },
                 {
@@ -164,7 +151,7 @@ export default function Home() {
                 Site Security & Readiness
               </h2>
               <p className="font-sans text-[#4A5240] text-sm md:text-base mb-8">
-                For our full-estate clients, we offer specialized infrastructure enhancements focusing on defensive site preparation and property readiness training. Integrated seamlessly into the landscape.
+                The next step after installing your PCS, we offer specialized infrastructure enhancements focusing on defensive site preparation and property readiness training. Integrated seamlessly into the landscape.
               </p>
               <Link href="/contact" className="inline-flex items-center gap-2 font-mono text-xs uppercase tracking-[0.15em] text-[#2B2B28] border-b border-[#2B2B28] pb-1 hover:text-[#B59A72] hover:border-[#B59A72] transition-colors">
                 Request details securely
@@ -175,7 +162,7 @@ export default function Home() {
             <FadeIn delay={0.2} className="bg-[#F5F2EC] p-8 border border-[#D9CABA]">
               <h4 className="font-mono text-xs uppercase tracking-[0.1em] text-[#2B2B28] mb-4">Site Security Design</h4>
               <p className="font-sans text-sm text-[#4A5240] leading-relaxed">
-                Architectural integration of access control, sightline management, and structural hardening. We design physical security that reads as premium landscape architecture, completely invisible to the untrained eye.
+                A custom detailed vulnerability report showing potential areas of approach (AOAs) and recommended readiness and cover/concealment positions.
               </p>
             </FadeIn>
             <FadeIn delay={0.3} className="bg-[#F5F2EC] p-8 border border-[#D9CABA]">
@@ -188,14 +175,14 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Recent Field Notes */}
+      {/* Intel */}
       <section className="py-24 px-6 lg:px-12 border-t border-[#D9CABA]">
         <div className="max-w-[1400px] mx-auto">
           <FadeIn>
             <div className="mb-12 md:flex md:items-end justify-between border-b border-[#D9CABA] pb-8">
               <div>
                 <h2 className="text-xs font-mono uppercase tracking-[0.2em] text-[#B59A72] mb-4">Journal</h2>
-                <h3 className="text-4xl md:text-5xl font-serif text-[#2B2B28]">Field Notes</h3>
+                <h3 className="text-4xl md:text-5xl font-serif text-[#2B2B28]">Intel</h3>
               </div>
               <Link href="/blog" className="hidden md:inline-flex items-center gap-2 font-mono text-xs uppercase tracking-[0.15em] text-[#4A5240] hover:text-[#2B2B28] transition-colors">
                 Read all dispatches <ArrowRight className="w-3 h-3" />
@@ -208,8 +195,8 @@ export default function Home() {
               <Link href="/blog" className="group block">
                 <div className="aspect-[16/9] overflow-hidden bg-[#2B2B28] mb-6">
                   <img 
-                    src="/images/blog-soil.jpg" 
-                    alt="Engineering the Mycelial Network" 
+                    src={pcsLogoImg}
+                    alt="Iron Farmer Passive Calorie System" 
                     className="w-full h-full object-cover opacity-90 group-hover:scale-105 group-hover:opacity-100 transition-all duration-700"
                   />
                 </div>
@@ -218,15 +205,14 @@ export default function Home() {
                   <span className="text-[#D9CABA]">•</span>
                   <span>Oct 14</span>
                 </div>
-                <h4 className="text-2xl font-serif text-[#2B2B28] mb-3 group-hover:text-[#4A5240] transition-colors">Engineering the Mycelial Network</h4>
               </Link>
             </FadeIn>
             <FadeIn delay={0.2}>
               <Link href="/blog" className="group block">
                 <div className="aspect-[16/9] overflow-hidden bg-[#2B2B28] mb-6">
                   <img 
-                    src="/images/blog-water.jpg" 
-                    alt="Gravity as Infrastructure" 
+                    src={sheepImg}
+                    alt="Florida Cracker Sheep" 
                     className="w-full h-full object-cover opacity-90 group-hover:scale-105 group-hover:opacity-100 transition-all duration-700"
                   />
                 </div>
@@ -235,7 +221,6 @@ export default function Home() {
                   <span className="text-[#D9CABA]">•</span>
                   <span>Sep 02</span>
                 </div>
-                <h4 className="text-2xl font-serif text-[#2B2B28] mb-3 group-hover:text-[#4A5240] transition-colors">Gravity as Infrastructure</h4>
               </Link>
             </FadeIn>
           </div>

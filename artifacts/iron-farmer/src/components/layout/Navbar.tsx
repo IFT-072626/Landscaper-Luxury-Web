@@ -49,7 +49,7 @@ export function Navbar() {
     <header className={navClass}>
       <div className="max-w-[1400px] mx-auto px-6 lg:px-12 h-24 flex items-center justify-between">
         <Link href="/" className="flex items-center gap-4 group">
-          <span className="font-serif text-2xl tracking-[0.2em] font-medium uppercase">Iron Farmer</span>
+          <span className="font-serif text-2xl tracking-[0.2em] font-medium uppercase">Iron Farmer™</span>
         </Link>
 
         {/* Desktop Nav */}
