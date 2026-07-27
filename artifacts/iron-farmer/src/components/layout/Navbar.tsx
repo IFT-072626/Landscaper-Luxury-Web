@@ -32,9 +32,9 @@ export function Navbar() {
       label: "Systems", 
       href: "/systems",
       sublinks: [
-        { label: "Overview", href: "/systems" },
         { label: "Passive Calorie System", href: "/systems/passive-calorie-system" },
         { label: "Plant Guilds", href: "/systems/plant-guilds" },
+        { label: "Animal Systems", href: "/systems" },
         { label: "Site Preparation", href: "/systems/site-preparation" },
         { label: "Risk Assessment", href: "/systems/risk-assessment" },
         { label: "Homestead Defense Training", href: "/systems/homestead-defense" },
