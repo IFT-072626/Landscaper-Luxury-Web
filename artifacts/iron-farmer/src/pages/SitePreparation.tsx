@@ -1,5 +1,6 @@
 import { FadeIn } from '@/components/ui/fade-in';
 import { Link } from 'wouter';
+import ifOneAcre from '@assets/IF-1-acre_1785201954817.png';
 
 export default function SitePreparation() {
   return (
@@ -12,10 +13,10 @@ export default function SitePreparation() {
             <span className="font-mono text-[10px] uppercase tracking-[0.2em] text-[#2B2B28]">Structural Earthworks</span>
           </div>
           <h1 className="text-5xl md:text-7xl font-serif text-[#2B2B28] max-w-4xl leading-[1.1] mb-8">
-            Custom Site Preparation
+            Regenerative Site Preparation
           </h1>
           <p className="font-sans text-xl text-[#4A5240] max-w-3xl leading-relaxed">
-            Before we plant, we sculpt. The physical topography of your land dictates its potential. We execute precision earthworks to master water flow and soil stability.
+            We strategically integrate animals to prepare the way for your PCS modules.
           </p>
         </FadeIn>
       </section>
@@ -24,8 +25,8 @@ export default function SitePreparation() {
         <FadeIn>
           <div className="w-full aspect-[21/9] bg-[#2B2B28] border border-[#D9CABA] overflow-hidden mb-24">
             <img 
-              src="/images/home-serv-1.jpg" 
-              alt="Precision grading and earthworks" 
+              src={ifOneAcre}
+              alt="1 Acre Food Production System diagram" 
               className="w-full h-full object-cover opacity-90"
             />
           </div>
@@ -33,21 +34,21 @@ export default function SitePreparation() {
         
         <div className="grid md:grid-cols-3 gap-12 border-t border-[#D9CABA] pt-12">
           <FadeIn delay={0.1}>
-            <h3 className="font-mono text-xs uppercase tracking-[0.2em] text-[#B59A72] mb-4">01. Survey & Mapping</h3>
+            <h3 className="font-mono text-xs uppercase tracking-[0.2em] text-[#B59A72] mb-4">01. Observation & Consultation</h3>
             <p className="font-sans text-sm text-[#2B2B28] leading-relaxed">
-              High-resolution LiDAR topography and hydrological modeling. We map every micro-watershed and solar aspect before moving a single yard of soil.
+              Levels are used to find the contour of your land. You choose your crops from a list we provide. We recommend the best location for your PCS system, test your soil, and evaluate livestock viability.
             </p>
           </FadeIn>
           <FadeIn delay={0.2}>
-            <h3 className="font-mono text-xs uppercase tracking-[0.2em] text-[#B59A72] mb-4">02. Precision Grading</h3>
+            <h3 className="font-mono text-xs uppercase tracking-[0.2em] text-[#B59A72] mb-4">02. Preparation & Installation</h3>
             <p className="font-sans text-sm text-[#2B2B28] leading-relaxed">
-              Keyline plowing and swale excavation using laser-guided equipment to ensure water moves exactly where it is needed, passively.
+              After soil analysis, we integrate livestock during earthworks which begins to activate soil biology right away. Then we begin digging the PCS modules, fill half the trench with woody material, build the berms and plant. This process repeats for each module.
             </p>
           </FadeIn>
           <FadeIn delay={0.3}>
-            <h3 className="font-mono text-xs uppercase tracking-[0.2em] text-[#B59A72] mb-4">03. Soil Amendment</h3>
+            <h3 className="font-mono text-xs uppercase tracking-[0.2em] text-[#B59A72] mb-4">03. Maintenance Plan</h3>
             <p className="font-sans text-sm text-[#2B2B28] leading-relaxed">
-              Deep ripping, mineral balancing, and massive organic matter integration to kickstart the biological engine of the property.
+              Our monthly service is for our clients who are serious about sovereignty. We put boots on the ground, check for pests and pestilence, monitor progress, perform updated risk assessments, and fertilize with organic compost and manure teas. Your subscription also includes first year SAP analysis and access to the Iron Farmer private member group.
             </p>
           </FadeIn>
         </div>
