@@ -44,7 +44,7 @@ export default function Home() {
               href="/contact" 
               className="inline-flex items-center gap-4 bg-[#F5F2EC] text-[#2B2B28] px-8 py-5 font-mono text-xs uppercase tracking-[0.15em] hover:bg-[#D9CABA] transition-colors"
             >
-              Schedule a Property Assessment <ArrowRight className="w-4 h-4" />
+              Request an Encrypted Consultation <ArrowRight className="w-4 h-4" />
             </Link>
           </FadeIn>
         </div>
