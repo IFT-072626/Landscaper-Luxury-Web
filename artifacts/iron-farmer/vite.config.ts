@@ -4,41 +4,43 @@ import react from '@vitejs/plugin-react';
 import tailwindcss from '@tailwindcss/vite';
 import { defineConfig } from 'vite';
 
-import runtimeErrorOverlay from '@replit/vite-plugin-runtime-error-modal';
-
-// fileURLToPath is universally supported in ESM Node (12+).
-// import.meta.dirname was only added in Node 20.11 / 21.2 and is unavailable
-// in older Vercel build images, so we derive __dirname the portable way.
+// Portable __dirname — works on Node 12+ ESM (import.meta.dirname requires 20.11+)
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
-// PORT is only required when running the dev/preview server (not during `vite build`).
-// Fall back to 5173 so builds on Vercel (and other CI environments) never throw.
-const rawPort = process.env.PORT;
-const port = rawPort ? Number(rawPort) : 5173;
+// PORT is only used by the dev/preview server, never by `vite build`.
+const port = process.env.PORT ? Number(process.env.PORT) : 5173;
 
-// BASE_PATH defaults to '/' — Vercel serves from root and does not set this variable.
+// BASE_PATH defaults to '/' for Vercel; Replit sets it per-artifact.
 const basePath = process.env.BASE_PATH ?? '/';
 
-export default defineConfig({
-  base: basePath,
-  plugins: [
-    react(),
-    tailwindcss(),
-    runtimeErrorOverlay(),
-    ...(process.env.NODE_ENV !== 'production' &&
-    process.env.REPL_ID !== undefined
-      ? [
+// All @replit/* plugins are only loaded inside Replit where REPL_ID is present.
+// On Vercel (and any other CI) REPL_ID is unset, so no Replit code is imported.
+const isReplit = process.env.REPL_ID !== undefined;
+
+const replitPlugins = isReplit
+  ? await (async () => {
+      const plugins = [
+        await import('@replit/vite-plugin-runtime-error-modal').then((m) =>
+          m.default(),
+        ),
+      ];
+      if (process.env.NODE_ENV !== 'production') {
+        plugins.push(
           await import('@replit/vite-plugin-cartographer').then((m) =>
-            m.cartographer({
-              root: path.resolve(__dirname, '..'),
-            }),
+            m.cartographer({ root: path.resolve(__dirname, '..') }),
           ),
           await import('@replit/vite-plugin-dev-banner').then((m) =>
             m.devBanner(),
           ),
-        ]
-      : []),
-  ],
+        );
+      }
+      return plugins;
+    })()
+  : [];
+
+export default defineConfig({
+  base: basePath,
+  plugins: [react(), tailwindcss(), ...replitPlugins],
   resolve: {
     alias: {
       '@': path.resolve(__dirname, 'src'),
@@ -56,9 +58,7 @@ export default defineConfig({
     strictPort: true,
     host: '0.0.0.0',
     allowedHosts: true,
-    fs: {
-      strict: true,
-    },
+    fs: { strict: true },
   },
   preview: {
     port,
