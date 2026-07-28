@@ -22,7 +22,7 @@ export default function PassiveCalorieSystem() {
         </FadeIn>
       </section>
 
-      {/* PCS Graphic with annotation overlays */}
+      {/* PCS Graphic with SVG annotation overlay */}
       <section className="w-full">
         <FadeIn>
           <div className="w-full overflow-hidden relative">
@@ -32,40 +32,28 @@ export default function PassiveCalorieSystem() {
               className="w-full h-full object-cover"
             />
 
-            {/* PCS Channel™ annotation — points to water trench at base of mound (low side) */}
-            <div className="absolute" style={{ left: '8%', top: '56%' }}>
-              {/* Line from label to channel */}
-              <svg
-                className="absolute"
-                style={{ left: '100%', top: '50%', transform: 'translateY(-50%)', width: '48px', height: '18px', overflow: 'visible' }}
-                viewBox="0 0 48 18"
-              >
-                <line x1="0" y1="9" x2="48" y2="9" stroke="white" strokeWidth="1" />
-                <circle cx="48" cy="9" r="2.5" fill="white" />
-              </svg>
-              <div style={{ background: 'rgba(255,255,255,0.92)', padding: '3px 7px', border: '1px solid rgba(0,0,0,0.35)' }}>
-                <span style={{ fontFamily: 'monospace', fontSize: '10px', fontWeight: 700, letterSpacing: '0.06em', color: '#1a1a18', textTransform: 'uppercase', whiteSpace: 'nowrap' }}>
-                  PCS Channel™
-                </span>
-              </div>
-            </div>
+            {/* Full-image SVG overlay — coordinate system is 0-100 in both axes */}
+            <svg
+              className="absolute inset-0 w-full h-full pointer-events-none"
+              viewBox="0 0 100 100"
+              preserveAspectRatio="none"
+            >
+              {/* ── PCS Channel™ — label on left, line extending right to touch the water trench ── */}
+              <rect x="1" y="53.2" width="12.5" height="5.2" rx="0" fill="rgba(255,255,255,0.92)" stroke="rgba(0,0,0,0.38)" strokeWidth="0.15" />
+              <text x="1.6" y="55.4" fontFamily="monospace" fontSize="1.5" fontWeight="700" fill="#1a1a18" letterSpacing="0.04">PCS CHANNEL</text>
+              <text x="1.6" y="57.4" fontFamily="monospace" fontSize="1.3" fontWeight="700" fill="#1a1a18" letterSpacing="0.04">™</text>
+              {/* line to water */}
+              <line x1="13.5" y1="55.8" x2="23.5" y2="57.5" stroke="white" strokeWidth="0.25" />
+              <circle cx="23.5" cy="57.5" r="0.55" fill="white" />
 
-            {/* RootVault™ annotation — points to bottom woody debris layer of mound */}
-            <div className="absolute" style={{ left: '8%', top: '62%' }}>
-              <svg
-                className="absolute"
-                style={{ left: '100%', top: '50%', transform: 'translateY(-50%)', width: '80px', height: '18px', overflow: 'visible' }}
-                viewBox="0 0 80 18"
-              >
-                <line x1="0" y1="9" x2="80" y2="9" stroke="white" strokeWidth="1" />
-                <circle cx="80" cy="9" r="2.5" fill="white" />
-              </svg>
-              <div style={{ background: 'rgba(255,255,255,0.92)', padding: '3px 7px', border: '1px solid rgba(0,0,0,0.35)' }}>
-                <span style={{ fontFamily: 'monospace', fontSize: '10px', fontWeight: 700, letterSpacing: '0.06em', color: '#1a1a18', textTransform: 'uppercase', whiteSpace: 'nowrap' }}>
-                  RootVault™
-                </span>
-              </div>
-            </div>
+              {/* ── RootVault™ — label on left, line extending further right to touch the wood pile ── */}
+              <rect x="1" y="60.2" width="12" height="5.2" rx="0" fill="rgba(255,255,255,0.92)" stroke="rgba(0,0,0,0.38)" strokeWidth="0.15" />
+              <text x="1.6" y="62.4" fontFamily="monospace" fontSize="1.5" fontWeight="700" fill="#1a1a18" letterSpacing="0.04">ROOTVAULT</text>
+              <text x="1.6" y="64.4" fontFamily="monospace" fontSize="1.3" fontWeight="700" fill="#1a1a18" letterSpacing="0.04">™</text>
+              {/* line to wood pile */}
+              <line x1="13" y1="62.8" x2="36.5" y2="63.5" stroke="white" strokeWidth="0.25" />
+              <circle cx="36.5" cy="63.5" r="0.55" fill="white" />
+            </svg>
           </div>
         </FadeIn>
       </section>
@@ -124,7 +112,7 @@ export default function PassiveCalorieSystem() {
             href="/contact"
             className="inline-flex items-center gap-4 bg-[#2B2B28] text-[#F5F2EC] px-8 py-5 font-mono text-xs uppercase tracking-[0.15em] hover:bg-[#4A5240] transition-colors"
           >
-            Request a Consultation <ArrowRight className="w-4 h-4" />
+            Request an Encrypted Consultation <ArrowRight className="w-4 h-4" />
           </Link>
         </FadeIn>
       </section>
