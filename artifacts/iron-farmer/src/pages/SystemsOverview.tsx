@@ -4,7 +4,7 @@ import { ArrowRight } from 'lucide-react';
 import chickensImg from '@assets/crackerchickens_1785201456901.png';
 import pigImg from '@assets/kunekune_1785201456904.jfif';
 import sheepImg from '@assets/Crackersheep1_1785201456903.jfif';
-import cattleImg from '@assets/Crackercows_1785201456903.jpg';
+import rabbitImg from '@assets/TAMUK_1785254212960.jpeg';
 
 const systems = [
   {
@@ -26,10 +26,10 @@ const systems = [
     img: sheepImg
   },
   {
-    title: "Cracker Cattle",
-    desc: "Superior forage ability. Thrive on low-nutrition brush. Resilient to pests and predators. Light and compact bodies handle intense heat. Must meet acreage requirement.",
+    title: "Cracker Rabbits",
+    desc: 'A Texas A&M hybrid called "TAMUK" bred specifically for heat tolerance.',
     path: "/systems/risk-assessment",
-    img: cattleImg
+    img: rabbitImg
   }
 ];
 
@@ -42,7 +42,7 @@ export default function SystemsOverview() {
             Resilient Genetics
           </h1>
           <p className="font-mono text-xs uppercase tracking-[0.2em] text-[#B59A72] max-w-2xl leading-relaxed">
-            Florida "Cracker" selected livestock adapted for heat, humidity, drought and poor forage. Resilience first.
+            Florida "Cracker" selected livestock adapted for heat, humidity, drought and marginal forage. Resilience first.
           </p>
         </FadeIn>
       </section>
@@ -73,6 +73,17 @@ export default function SystemsOverview() {
             </FadeIn>
           ))}
         </div>
+      </section>
+
+      <section className="px-6 lg:px-12 pb-8 max-w-[1400px] mx-auto text-center">
+        <FadeIn>
+          <Link
+            href="/contact"
+            className="inline-flex items-center gap-4 bg-[#2B2B28] text-[#F5F2EC] px-8 py-5 font-mono text-xs uppercase tracking-[0.15em] hover:bg-[#4A5240] transition-colors"
+          >
+            Request a Consultation <ArrowRight className="w-4 h-4" />
+          </Link>
+        </FadeIn>
       </section>
     </div>
   );

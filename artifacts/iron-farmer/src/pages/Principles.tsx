@@ -1,4 +1,6 @@
 import { FadeIn } from '@/components/ui/fade-in';
+import { Link } from 'wouter';
+import { ArrowRight } from 'lucide-react';
 
 export default function Principles() {
   return (
@@ -25,7 +27,7 @@ export default function Principles() {
                 The world has entered a period of increasing uncertainty. Global conflicts, supply chain disruptions, and resource competition have revealed just how dependent modern agriculture is on fuel, fertilizer, and complex distribution networks.
               </p>
               <p className="font-sans text-lg text-[#4A5240] leading-relaxed mt-6">
-                Food security is no longer something to assume—it is something to cultivate. Establishing perennial food systems on productive land transforms a property from a passive asset into a resilient one. These living systems produce year after year, requiring less intervention while increasing ecological health, property value, and long-term independence. Our Passive Calorie System (PCS) is designed for adversity. Resilience is built before crisis. Together we can steward land capable of sustaining families through whatever tomorrow may bring.
+                Food security is no longer something to assume—it is something to cultivate. Establishing perennial food systems on productive land transforms a property from a passive asset into a resilient one. These living systems produce year after year, requiring less intervention while increasing ecological health, property value, and long-term independence. Our Passive Calorie System (PCS)™ is designed for adversity. Resilience is built before crisis. Together we can steward land capable of sustaining families through whatever tomorrow may bring.
               </p>
             </div>
           </FadeIn>
@@ -35,7 +37,7 @@ export default function Principles() {
               <span className="absolute -left-12 md:-left-24 top-2 font-mono text-4xl text-[#D9CABA] opacity-50">II</span>
               <h2 className="text-3xl font-serif text-[#2B2B28] mb-6">Sovereignty</h2>
               <p className="font-sans text-lg text-[#4A5240] leading-relaxed">
-                Every human being on the face of this earth has an unalienable right to grow food. There is no regulatory body irrespective of size or power that can take this right away. Nor is there one with which we would comply should it attempt to do so.
+                Every human being on the face of this earth has an unalienable right to grow food. It's no different than the right to breathe air. There is no regulatory body of any size or power that can take away this right. Period.
               </p>
             </div>
           </FadeIn>
@@ -65,12 +67,23 @@ export default function Principles() {
               <span className="absolute -left-12 md:-left-24 top-2 font-mono text-4xl text-[#D9CABA] opacity-50">V</span>
               <h2 className="text-3xl font-serif text-[#2B2B28] mb-6">Legacy</h2>
               <p className="font-sans text-lg text-[#4A5240] leading-relaxed">
-                Plant trees under whose shade you will never sit. Our Perennial food system is designed to be self-regenerating. Once established it can last multiple generations providing safe organic food for your children's children. If you move, we have a licensed Real Estate agent who will negotiate either ownership or access to your Passive Calorie System (PCS).
+                Plant trees under whose shade you will never sit. Our Perennial food system is designed to be self-regenerating. Once established it can last multiple generations providing safe organic food for your children's children. If you move, we have a licensed Real Estate agent who will negotiate either ownership or access to your Passive Calorie System (PCS)™.
               </p>
             </div>
           </FadeIn>
 
         </div>
+      </section>
+
+      <section className="px-6 lg:px-12 pb-16 max-w-[800px] mx-auto text-center">
+        <FadeIn>
+          <Link
+            href="/contact"
+            className="inline-flex items-center gap-4 bg-[#2B2B28] text-[#F5F2EC] px-8 py-5 font-mono text-xs uppercase tracking-[0.15em] hover:bg-[#4A5240] transition-colors"
+          >
+            Request a Consultation <ArrowRight className="w-4 h-4" />
+          </Link>
+        </FadeIn>
       </section>
     </div>
   );

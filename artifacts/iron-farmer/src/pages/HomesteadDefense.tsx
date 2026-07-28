@@ -86,7 +86,7 @@ export default function HomesteadDefense() {
                   href="/contact"
                   className="inline-flex items-center gap-4 bg-[#2B2B28] text-[#F5F2EC] px-8 py-5 font-mono text-xs uppercase tracking-[0.15em] hover:bg-[#4A5240] transition-colors"
                 >
-                  Apply for Access <ArrowRight className="w-4 h-4" />
+                  Request a Consultation <ArrowRight className="w-4 h-4" />
                 </Link>
                 <p className="font-mono text-[10px] uppercase tracking-[0.15em] text-[#B59A72] self-center max-w-xs">
                   Available exclusively to existing Iron Farmer clients following a completed site assessment.
