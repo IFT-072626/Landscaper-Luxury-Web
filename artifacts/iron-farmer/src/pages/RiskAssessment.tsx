@@ -1,6 +1,7 @@
 import { FadeIn } from '@/components/ui/fade-in';
 import { Link } from 'wouter';
 import { ArrowRight, ShieldAlert } from 'lucide-react';
+import droneDfpImg from '@assets/Drone-DFP_1785206647264.png';
 
 export default function RiskAssessment() {
   return (
@@ -10,13 +11,13 @@ export default function RiskAssessment() {
           <div className="flex items-center gap-4 mb-8">
             <Link href="/systems" className="font-mono text-[10px] uppercase tracking-[0.2em] text-[#B59A72] hover:text-[#2B2B28]">Systems</Link>
             <span className="text-[#D9CABA]">—</span>
-            <span className="font-mono text-[10px] uppercase tracking-[0.2em] text-[#2B2B28]">Estate Audit</span>
+            <span className="font-mono text-[10px] uppercase tracking-[0.2em] text-[#2B2B28]">Keep what you grow</span>
           </div>
           <h1 className="text-5xl md:text-7xl font-serif text-[#2B2B28] max-w-4xl leading-[1.1] mb-8">
             Risk Assessment
           </h1>
           <p className="font-sans text-xl text-[#4A5240] max-w-3xl leading-relaxed">
-            A property is only as resilient as its weakest system. We conduct exhaustive audits to identify and mitigate environmental, logistical, and physical vulnerabilities.
+            Keep the Wolves Away
           </p>
         </FadeIn>
       </section>
@@ -26,26 +27,26 @@ export default function RiskAssessment() {
           <div className="space-y-12">
             <div>
               <div className="flex items-center gap-3 font-mono text-xs uppercase tracking-[0.1em] text-[#2B2B28] mb-4 border-b border-[#D9CABA] pb-2">
-                <ShieldAlert className="w-4 h-4 text-[#B59A72]" /> Supply Chain Fragility
+                <ShieldAlert className="w-4 h-4 text-[#B59A72]" /> Sector Analysis & Water Mapping
               </div>
               <p className="font-sans text-sm text-[#4A5240] leading-relaxed">
-                Analysis of inputs required to keep the estate operational. We identify dependencies on external grid power, municipal water, imported fertilizers, and fuel, mapping pathways to autonomy.
+                Map wind, sun, fire risk, track where pools form, check soil compaction and microclimates.
               </p>
             </div>
             <div>
               <div className="flex items-center gap-3 font-mono text-xs uppercase tracking-[0.1em] text-[#2B2B28] mb-4 border-b border-[#D9CABA] pb-2">
-                <ShieldAlert className="w-4 h-4 text-[#B59A72]" /> Hydrological Vulnerability
+                <ShieldAlert className="w-4 h-4 text-[#B59A72]" /> Perimeter Assessment and Beyond
               </div>
               <p className="font-sans text-sm text-[#4A5240] leading-relaxed">
-                Evaluating drought resilience and flood risk. We model extreme weather events against your current topography to ensure the land can absorb shock rather than erode.
+                Fence evaluation, weak points, choke points, access control, neighbors, future land use, zoning, scheduled development.
               </p>
             </div>
             <div>
               <div className="flex items-center gap-3 font-mono text-xs uppercase tracking-[0.1em] text-[#2B2B28] mb-4 border-b border-[#D9CABA] pb-2">
-                <ShieldAlert className="w-4 h-4 text-[#B59A72]" /> Physical Security Architecture
+                <ShieldAlert className="w-4 h-4 text-[#B59A72]" /> Defensive Posture
               </div>
               <p className="font-sans text-sm text-[#4A5240] leading-relaxed">
-                Invisible hardening of the property perimeter. We assess sightlines, natural barriers, and chokepoints, providing recommendations for landscaping that serves dual purposes of food production and access denial.
+                Defensive positions, areas of approach, blind and tree stand locations, predator control.
               </p>
             </div>
           </div>
@@ -54,8 +55,8 @@ export default function RiskAssessment() {
         <FadeIn delay={0.2}>
           <div className="aspect-[3/4] bg-[#2B2B28] border border-[#D9CABA] overflow-hidden p-2">
             <img 
-              src="/images/blog-water.jpg" 
-              alt="Water management analysis" 
+              src={droneDfpImg}
+              alt="Drone defensive field positions overview" 
               className="w-full h-full object-cover opacity-90"
             />
           </div>

@@ -14,6 +14,7 @@ const skills = [
   "Quick livestock lockdown",
   "Silent signals for livestock",
   "Situational drills and contingency",
+  "Radio communication",
 ];
 
 export default function HomesteadDefense() {

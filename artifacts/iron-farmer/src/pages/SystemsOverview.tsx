@@ -27,7 +27,7 @@ const systems = [
   },
   {
     title: "Cracker Cattle",
-    desc: "Superior forage ability. Thrive on low-nutrition brush. Resilient to pests and predators. Light and compact bodies handle intense heat.",
+    desc: "Superior forage ability. Thrive on low-nutrition brush. Resilient to pests and predators. Light and compact bodies handle intense heat. Must meet acreage requirement.",
     path: "/systems/risk-assessment",
     img: cattleImg
   }
