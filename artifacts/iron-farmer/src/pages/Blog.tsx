@@ -1,7 +1,7 @@
 import { FadeIn } from '@/components/ui/fade-in';
 import { Link } from 'wouter';
 import dogImg from '@assets/pyranese1_1785110709168.png';
-import headerBg from '@assets/mercantile1_1785193573756.jfif';
+import headerBg from '@assets/IF-AOA_1785195909779.png';
 
 const articles = [
   {
