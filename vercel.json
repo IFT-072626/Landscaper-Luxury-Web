@@ -1,0 +1,9 @@
+{
+  "buildCommand": "pnpm --filter @workspace/iron-farmer run build",
+  "outputDirectory": "artifacts/iron-farmer/dist/public",
+  "installCommand": "pnpm install",
+  "framework": null,
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/index.html" }
+  ]
+}
