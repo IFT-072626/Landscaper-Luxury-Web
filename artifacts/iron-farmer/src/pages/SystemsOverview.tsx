@@ -1,31 +1,35 @@
 import { FadeIn } from '@/components/ui/fade-in';
 import { Link } from 'wouter';
 import { ArrowRight } from 'lucide-react';
+import chickensImg from '@assets/crackerchickens_1785201456901.png';
+import pigImg from '@assets/kunekune_1785201456904.jfif';
+import sheepImg from '@assets/Crackersheep1_1785201456903.jfif';
+import cattleImg from '@assets/Crackercows_1785201456903.jpg';
 
 const systems = [
   {
-    title: "Passive Calorie System",
-    desc: "Our flagship methodology for engineering autonomous food production infrastructure.",
+    title: "Cracker Chickens",
+    desc: "Brought by the Spanish in the 1800's. These birds survive on minimal feed. Alert and agile to easily evade predators.",
     path: "/systems/passive-calorie-system",
-    img: "/images/pcs-diagram.jpg"
+    img: chickensImg
   },
   {
-    title: "Plant Guilds",
-    desc: "Companion planted polycultures acting as a single, resilient biological organism.",
+    title: "Kunekune Pigs",
+    desc: "Forage-based survival. Minimal rooting. Docile. Manageable size. Must meet acreage requirement.",
     path: "/systems/plant-guilds",
-    img: "/images/blog-guilds.jpg"
+    img: pigImg
   },
   {
-    title: "Site Preparation",
-    desc: "Precision grading, soil amendment, and structural earthworks for long-term stability.",
+    title: "Cracker Sheep",
+    desc: "Naturally Hardy. Parasite resistant. Descended from Spanish sheep. Thrive without human intervention. Must meet acreage requirement.",
     path: "/systems/site-preparation",
-    img: "/images/home-serv-1.jpg"
+    img: sheepImg
   },
   {
-    title: "Risk Assessment",
-    desc: "Comprehensive property audits analyzing environmental, logistical, and physical vulnerabilities.",
+    title: "Cracker Cattle",
+    desc: "Superior forage ability. Thrive on low-nutrition brush. Resilient to pests and predators. Light and compact bodies handle intense heat.",
     path: "/systems/risk-assessment",
-    img: "/images/blog-water.jpg"
+    img: cattleImg
   }
 ];
 
@@ -35,10 +39,10 @@ export default function SystemsOverview() {
       <section className="px-6 lg:px-12 py-20 max-w-[1400px] mx-auto border-b border-[#D9CABA]">
         <FadeIn>
           <h1 className="text-5xl md:text-7xl font-serif text-[#2B2B28] max-w-4xl leading-[1.1] mb-8">
-            Engineered Systems
+            Resilient Genetics
           </h1>
           <p className="font-mono text-xs uppercase tracking-[0.2em] text-[#B59A72] max-w-2xl leading-relaxed">
-            Infrastructure designed for permanence. We approach land like architects approach a structure: with intention, precision, and an eye toward deep time.
+            Florida "Cracker" selected livestock adapted for heat, humidity, drought and poor forage. Resilience first.
           </p>
         </FadeIn>
       </section>
@@ -49,10 +53,10 @@ export default function SystemsOverview() {
             <FadeIn key={system.title} delay={i * 0.1}>
               <Link href={system.path} className="group block">
                 <div className="aspect-[4/3] overflow-hidden bg-[#E8E4D9] border border-[#D9CABA] mb-8 relative">
-                  <img 
-                    src={system.img} 
-                    alt={system.title} 
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000 mix-blend-multiply"
+                  <img
+                    src={system.img}
+                    alt={system.title}
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000"
                   />
                   <div className="absolute inset-0 bg-black/0 group-hover:bg-black/5 transition-colors duration-500" />
                 </div>

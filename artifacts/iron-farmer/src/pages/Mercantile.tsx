@@ -11,11 +11,11 @@ const products = [
   { name: "Tools",              category: "Tools",              img: shovelsImg },
   { name: "Gear",               category: "Gear",               img: warhorseImg },
   { name: "Rations",            category: "Rations",            img: jerkeyImg },
-  { name: "Hearty Starts",      category: "Hearty Starts",      img: startsImg },
+  { name: "Hardy Starts",       category: "Hardy Starts",       img: startsImg },
   { name: "Resilient Genetics", category: "Resilient Genetics", img: sheepImg },
 ];
 
-const tabs = ["All Items", "Tools", "Gear", "Rations", "Hearty Starts", "Resilient Genetics"];
+const tabs = ["All Items", "Tools", "Gear", "Rations", "Hardy Starts", "Resilient Genetics"];
 
 export default function Mercantile() {
   const [active, setActive] = useState("All Items");
