@@ -64,8 +64,7 @@ export default function RiskAssessment() {
       </section>
       
       <section className="mt-24 py-16 border-y border-[#D9CABA] bg-[#E8E4D9]">
-        <div className="max-w-[1400px] mx-auto px-6 lg:px-12 flex flex-col md:flex-row items-center justify-between gap-8">
-          <h3 className="font-serif text-2xl text-[#2B2B28]">Ready to audit your estate?</h3>
+        <div className="max-w-[1400px] mx-auto px-6 lg:px-12 flex justify-center">
           <Link 
             href="/contact" 
             className="inline-flex items-center gap-4 bg-[#2B2B28] text-[#F5F2EC] px-8 py-5 font-mono text-xs uppercase tracking-[0.15em] hover:bg-[#4A5240] transition-colors"

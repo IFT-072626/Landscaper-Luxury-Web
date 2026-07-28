@@ -36,7 +36,7 @@ export default function Mission() {
           <div className="lg:col-span-7 font-sans text-lg text-[#4A5240] leading-relaxed space-y-8 pt-8">
             <FadeIn delay={0.2}>
               <p>
-                We believe the homesteading movement has become unnecessarily confusing. The space is saturated with lunatic personalities, competing philosophies, countless growing methods, patriot mythology and an overall lack of urgency. We are on a mission to cut through the noise, limit the endless options, and install repeatable, modular food systems designed for adversity.
+                We believe the homesteading movement has become unnecessarily confusing. The space is saturated with "lunatic" personalities, competing philosophies, countless growing methods, patriot mythology and an overall lack of urgency. We are on a mission to cut through the noise, limit the endless options, and install repeatable, modular food systems designed for adversity.
               </p>
             </FadeIn>
 

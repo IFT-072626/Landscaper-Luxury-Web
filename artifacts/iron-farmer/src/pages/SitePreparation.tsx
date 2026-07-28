@@ -68,29 +68,38 @@ export default function SitePreparation() {
               </div>
             </div>
 
-            {/* ── PCS MOD 1 (covers MOUND PLANTING ZONE 1) ── */}
+            {/* ── RootVault 1 (covers MOUND PLANTING ZONE 1) ── */}
             <div className="absolute" style={{ left: '48%', top: '17%' }}>
               <div style={{ background: 'rgba(8,25,12,0.9)', border: '1px solid rgba(255,255,255,0.5)', padding: '5px 10px', minWidth: '64px', textAlign: 'center' }}>
                 <div style={{ fontFamily: 'monospace', fontSize: '9px', fontWeight: 700, color: '#fff', textTransform: 'uppercase', letterSpacing: '0.06em', lineHeight: 1.5, whiteSpace: 'nowrap' }}>
-                  PCS MOD
+                  RootVault
                 </div>
               </div>
             </div>
 
-            {/* ── PCS MOD 2 (covers MOUND PLANTING ZONE 2) ── */}
+            {/* ── RootVault 2 (covers MOUND PLANTING ZONE 2) ── */}
             <div className="absolute" style={{ left: '48%', top: '41%' }}>
               <div style={{ background: 'rgba(8,25,12,0.9)', border: '1px solid rgba(255,255,255,0.5)', padding: '5px 10px', minWidth: '64px', textAlign: 'center' }}>
                 <div style={{ fontFamily: 'monospace', fontSize: '9px', fontWeight: 700, color: '#fff', textTransform: 'uppercase', letterSpacing: '0.06em', lineHeight: 1.5, whiteSpace: 'nowrap' }}>
-                  PCS MOD
+                  RootVault
                 </div>
               </div>
             </div>
 
-            {/* ── PCS MOD 3 (covers MOUND PLANTING ZONE 3) ── */}
+            {/* ── RootVault 3 (covers MOUND PLANTING ZONE 3) ── */}
             <div className="absolute" style={{ left: '48%', top: '62%' }}>
               <div style={{ background: 'rgba(8,25,12,0.9)', border: '1px solid rgba(255,255,255,0.5)', padding: '5px 10px', minWidth: '64px', textAlign: 'center' }}>
                 <div style={{ fontFamily: 'monospace', fontSize: '9px', fontWeight: 700, color: '#fff', textTransform: 'uppercase', letterSpacing: '0.06em', lineHeight: 1.5, whiteSpace: 'nowrap' }}>
-                  PCS MOD
+                  RootVault
+                </div>
+              </div>
+            </div>
+
+            {/* ── Covers baked-in "FLORIDA CRACKER SHEEP / 4 HEAD" — re-renders without "4 HEAD" ── */}
+            <div className="absolute" style={{ left: '79%', top: '21%', width: '20%', height: '20%' }}>
+              <div style={{ background: 'rgba(8,25,12,0.97)', border: '1px solid rgba(255,255,255,0.5)', padding: '6px 10px', width: '100%', height: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                <div style={{ fontFamily: 'monospace', fontSize: '9px', fontWeight: 700, color: '#fff', textTransform: 'uppercase', letterSpacing: '0.06em', lineHeight: 1.6, textAlign: 'center', whiteSpace: 'nowrap' }}>
+                  FLORIDA<br />CRACKER SHEEP
                 </div>
               </div>
             </div>

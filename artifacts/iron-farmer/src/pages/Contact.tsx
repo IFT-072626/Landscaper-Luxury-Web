@@ -1,5 +1,6 @@
 import { FadeIn } from '@/components/ui/fade-in';
 import { useState } from 'react';
+import chessImg from '@assets/chess_board_1785210000000.jpg';
 import { useForm } from 'react-hook-form';
 import { z } from 'zod';
 import { zodResolver } from '@hookform/resolvers/zod';
@@ -64,14 +65,25 @@ export default function Contact() {
 
   return (
     <div className="pt-24 pb-32">
-      <section className="px-6 lg:px-12 py-20 max-w-[1400px] mx-auto border-b border-[#D9CABA]">
+      <section className="relative px-6 lg:px-12 py-20 max-w-[1400px] mx-auto border-b border-[#D9CABA] overflow-hidden">
+        {/* Background chess image */}
+        <div className="absolute inset-0">
+          <img
+            src={chessImg}
+            alt=""
+            className="w-full h-full object-cover"
+            style={{ opacity: 0.18 }}
+          />
+        </div>
         <FadeIn>
-          <h1 className="text-5xl md:text-7xl font-serif text-[#2B2B28] max-w-4xl leading-[1.1] mb-8">
-            Begin Your Journey
-          </h1>
-          <p className="font-mono text-xs uppercase tracking-[0.2em] text-[#B59A72] max-w-2xl leading-relaxed">
-            Upon acceptance, a food freedom professional will guide you every step of the way.
-          </p>
+          <div className="relative z-10">
+            <h1 className="text-5xl md:text-7xl font-serif text-[#2B2B28] max-w-4xl leading-[1.1] mb-8">
+              Begin Your Journey
+            </h1>
+            <p className="font-mono text-xs uppercase tracking-[0.2em] text-[#B59A72] max-w-2xl leading-relaxed">
+              Upon acceptance, a food freedom professional will guide you every step of the way.
+            </p>
+          </div>
         </FadeIn>
       </section>
 
