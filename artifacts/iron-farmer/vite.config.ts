@@ -1,9 +1,15 @@
+import { fileURLToPath } from 'url';
 import path from 'path';
 import react from '@vitejs/plugin-react';
 import tailwindcss from '@tailwindcss/vite';
 import { defineConfig } from 'vite';
 
 import runtimeErrorOverlay from '@replit/vite-plugin-runtime-error-modal';
+
+// fileURLToPath is universally supported in ESM Node (12+).
+// import.meta.dirname was only added in Node 20.11 / 21.2 and is unavailable
+// in older Vercel build images, so we derive __dirname the portable way.
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 // PORT is only required when running the dev/preview server (not during `vite build`).
 // Fall back to 5173 so builds on Vercel (and other CI environments) never throw.
@@ -24,7 +30,7 @@ export default defineConfig({
       ? [
           await import('@replit/vite-plugin-cartographer').then((m) =>
             m.cartographer({
-              root: path.resolve(import.meta.dirname, '..'),
+              root: path.resolve(__dirname, '..'),
             }),
           ),
           await import('@replit/vite-plugin-dev-banner').then((m) =>
@@ -35,19 +41,14 @@ export default defineConfig({
   ],
   resolve: {
     alias: {
-      '@': path.resolve(import.meta.dirname, 'src'),
-      '@assets': path.resolve(
-        import.meta.dirname,
-        '..',
-        '..',
-        'attached_assets',
-      ),
+      '@': path.resolve(__dirname, 'src'),
+      '@assets': path.resolve(__dirname, '..', '..', 'attached_assets'),
     },
     dedupe: ['react', 'react-dom'],
   },
-  root: path.resolve(import.meta.dirname),
+  root: path.resolve(__dirname),
   build: {
-    outDir: path.resolve(import.meta.dirname, 'dist'),
+    outDir: path.resolve(__dirname, 'dist'),
     emptyOutDir: true,
   },
   server: {
