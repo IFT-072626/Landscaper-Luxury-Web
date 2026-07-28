@@ -1,5 +1,6 @@
 import { FadeIn } from '@/components/ui/fade-in';
 import { Link } from 'wouter';
+import { ConsultationButton } from '@/components/ConsultationButton';
 import { ArrowRight } from 'lucide-react';
 import dogImg from '@assets/pyranese1_1785110709168.png';
 import headerBg from '@assets/IF-AOA_1785195909779.png';
@@ -74,12 +75,7 @@ export default function Blog() {
 
       <section className="px-6 lg:px-12 pb-8 max-w-[1400px] mx-auto text-center">
         <FadeIn>
-          <Link
-            href="/contact"
-            className="inline-flex items-center gap-4 bg-[#2B2B28] text-[#F5F2EC] px-8 py-5 font-mono text-xs uppercase tracking-[0.15em] hover:bg-[#4A5240] transition-colors"
-          >
-            Request an Encrypted Consultation <ArrowRight className="w-4 h-4" />
-          </Link>
+          <ConsultationButton className="inline-flex items-center gap-4 bg-[#2B2B28] text-[#F5F2EC] px-8 py-5 font-mono text-xs uppercase tracking-[0.15em] hover:bg-[#4A5240] transition-colors" />
         </FadeIn>
       </section>
     </div>

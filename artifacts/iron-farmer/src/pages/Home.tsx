@@ -1,6 +1,7 @@
 import { FadeIn } from '@/components/ui/fade-in';
 import { Link } from 'wouter';
 import { ArrowRight, ShieldCheck } from 'lucide-react';
+import { ConsultationButton } from '@/components/ConsultationButton';
 import heroVideo from '@assets/Drone_surveilling_Florida_homestead_202607171633_1785107479357.mp4';
 import pcsImg from '@assets/PCS2_1785181146836.png';
 import siteImg from '@assets/IF-1-acre_1785180909087.png';
@@ -40,12 +41,7 @@ export default function Home() {
           </FadeIn>
           
           <FadeIn delay={0.4}>
-            <Link 
-              href="/contact" 
-              className="inline-flex items-center gap-4 bg-[#F5F2EC] text-[#2B2B28] px-8 py-5 font-mono text-xs uppercase tracking-[0.15em] hover:bg-[#D9CABA] transition-colors"
-            >
-              Request an Encrypted Consultation <ArrowRight className="w-4 h-4" />
-            </Link>
+            <ConsultationButton className="inline-flex items-center gap-4 bg-[#F5F2EC] text-[#2B2B28] px-8 py-5 font-mono text-xs uppercase tracking-[0.15em] hover:bg-[#D9CABA] transition-colors" />
           </FadeIn>
         </div>
       </section>

@@ -1,5 +1,6 @@
 import { FadeIn } from '@/components/ui/fade-in';
 import { Link } from 'wouter';
+import { ConsultationButton } from '@/components/ConsultationButton';
 import { ArrowRight } from 'lucide-react';
 import tradmomImg from '@assets/tradmom3_1785110411053.png';
 
@@ -82,12 +83,7 @@ export default function HomesteadDefense() {
 
             <FadeIn delay={0.3}>
               <div className="border-t border-[#D9CABA] pt-10 flex flex-col sm:flex-row gap-6">
-                <Link
-                  href="/contact"
-                  className="inline-flex items-center gap-4 bg-[#2B2B28] text-[#F5F2EC] px-8 py-5 font-mono text-xs uppercase tracking-[0.15em] hover:bg-[#4A5240] transition-colors"
-                >
-                  Request an Encrypted Consultation <ArrowRight className="w-4 h-4" />
-                </Link>
+                <ConsultationButton className="inline-flex items-center gap-4 bg-[#2B2B28] text-[#F5F2EC] px-8 py-5 font-mono text-xs uppercase tracking-[0.15em] hover:bg-[#4A5240] transition-colors" />
                 <p className="font-mono text-[10px] uppercase tracking-[0.15em] text-[#B59A72] self-center max-w-xs">
                   Available exclusively to existing Iron Farmer clients following a completed site assessment.
                 </p>
