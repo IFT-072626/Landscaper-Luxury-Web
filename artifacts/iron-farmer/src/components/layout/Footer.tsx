@@ -11,6 +11,17 @@ export function Footer() {
           <p className="font-sans text-[#D9CABA] max-w-md text-sm leading-relaxed">
             Permanent Food Infrastructure for the Resilient Estate.
           </p>
+          <div className="mt-8">
+            <a
+              href="mailto:ironfarmertraining@protonmail.com"
+              className="font-mono text-xs uppercase tracking-[0.15em] text-[#B59A72] hover:text-[#F5F2EC] transition-colors"
+            >
+              Email Iron Farmer
+            </a>
+            <p className="font-mono text-xs tracking-[0.08em] text-[#8a8a8a] mt-2 select-all">
+              ironfarmertraining@protonmail.com
+            </p>
+          </div>
         </div>
         
         <div>
