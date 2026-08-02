@@ -2,6 +2,7 @@ import { FadeIn } from '@/components/ui/fade-in';
 import { Link } from 'wouter';
 import { ConsultationButton } from '@/components/ConsultationButton';
 import { ArrowRight } from 'lucide-react';
+import pyraneseImg from '@assets/pyranese1_1785110709168.png';
 import chickensImg from '@assets/crackerchickens_1785201456901.png';
 import pigImg from '@assets/kunekune_1785201456904.jfif';
 import sheepImg from '@assets/Crackersheep1_1785201456903.jfif';
@@ -74,6 +75,35 @@ export default function SystemsOverview() {
             </FadeIn>
           ))}
         </div>
+      </section>
+
+      {/* Animal Sentries */}
+      <section className="px-6 lg:px-12 py-20 max-w-[1400px] mx-auto border-t border-b border-[#D9CABA]">
+        <FadeIn>
+          <h2 className="text-5xl md:text-7xl font-serif text-[#2B2B28] max-w-4xl leading-[1.1] mb-8">
+            Animal Sentries
+          </h2>
+        </FadeIn>
+      </section>
+
+      <section className="px-6 lg:px-12 py-24 max-w-[1400px] mx-auto">
+        <FadeIn>
+          <div className="max-w-2xl">
+            <div className="aspect-[4/3] overflow-hidden bg-[#E8E4D9] border border-[#D9CABA] mb-8">
+              <img
+                src={pyraneseImg}
+                alt="Great Pyrenees livestock guardian dog"
+                className="w-full h-full object-cover"
+              />
+            </div>
+            <div className="border-t border-[#D9CABA] pt-6">
+              <h3 className="text-3xl font-serif text-[#2B2B28] mb-3">Great Pyrenees</h3>
+              <p className="font-sans text-[#4A5240] text-sm max-w-md">
+                Livestock Guardians. Instinctively protect flocks and herds from predators. Trained for gentleness with other animals. Alert for intruders.
+              </p>
+            </div>
+          </div>
+        </FadeIn>
       </section>
 
       <section className="px-6 lg:px-12 pb-8 max-w-[1400px] mx-auto text-center">
